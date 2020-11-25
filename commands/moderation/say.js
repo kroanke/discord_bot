@@ -26,7 +26,7 @@ module.exports = {
         else if(args[0].toLowerCase() === "twitch"){
             const embed = new MessageEmbed()
                 .setColor(roleColor)
-                .setAuthor('Kroanke','https://hizliresim.com/017Ogu.jpg' ,'https://www.twitch.tv/kroanke');
+                .setAuthor('Kroanke','https://imgur.com/ykybn9P.jpg' ,'https://www.twitch.tv/kroanke');
             message.channel.send(embed)
         }
 

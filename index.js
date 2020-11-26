@@ -19,13 +19,14 @@ config({
 });
 
 client.on("ready", () => {
+    client.user.setUsername("Kroanke");
     console.log(`Hi, ${client.user.username} is now online!`);
-
     client.user.setPresence({
         status: "online",
-        game: {
-            name: "me getting developed",
-            type: "WATCHING"
+        activity: {
+            name: "twitch.tv/kroanke",
+            type: "WATCHING",
+            url: "https://www.twitch.tv/kroanke"
         }
     }); 
 })

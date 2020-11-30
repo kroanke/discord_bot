@@ -8,7 +8,7 @@ table.setHeading("Command", "Load status");
 
 module.exports = (client) => {
     // Read every commands subfolder
-    readdirSync("./commands/").forEach(dir => {
+    readdirSync("./commands").forEach(dir => {
         // Filter so we only have .js command files
         const commands = readdirSync(`./commands/${dir}/`).filter(file => file.endsWith(".js"));
     
@@ -20,9 +20,9 @@ module.exports = (client) => {
     
             if (pull.name) {
                 client.commands.set(pull.name, pull);
-                table.addRow(file, 'YES');
+                table.addRow(file, '✅');
             } else {
-                table.addRow(file, `NO  -> missing a help.name, or help.name is not a string.`);
+                table.addRow(file, `❌  -> missing a help.name, or help.name is not a string.`);
                 continue;
             }
     

@@ -25,7 +25,7 @@ module.exports = {
 
                                             }).catch(() => {
                                 // what to do if a user takes too long goes here 
-                                                    message.reply('Yazman cok uzun surdu bb') 
+                                                    message.reply('Yazman cok uzun surdu') 
                                             });
 			}
 			

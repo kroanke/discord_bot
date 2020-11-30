@@ -79,6 +79,9 @@ module.exports = {
                 rand_secilenler[rand_secilenler.length] = toplam_kisi.splice(
                     Math.floor(Math.random() * toplam_kisi.length), 1)[0];
             } while(rand_secilenler.length<x);
+            rand_secilenler.sort(function(a,b){
+                return a-b;
+            })
         }
 
 

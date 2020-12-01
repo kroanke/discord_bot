@@ -31,6 +31,16 @@ client.on("ready", () => {
     }); 
 })
 
+client.on("guildMemberAdd", member =>{
+    const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === "general");
+    welcomeChannel.send(`${member} hosgeldin yarram`);
+})
+
+client.on("guildMemberRemove", member =>{
+    const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === "general");
+    welcomeChannel.send(`${member} siktirdi gitti`);
+})
+
 client.on("message", async message => {
     const prefix = ".";
 

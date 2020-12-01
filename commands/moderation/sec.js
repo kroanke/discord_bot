@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 module.exports = {
-    name : "sec",
+    name : "cekilis",
     category: "moderation",
     description: "Belirli bir sayida insandan olusan topluluk arasindan belirli sayida insan sec",
     usage: '[command name]',

@@ -32,12 +32,12 @@ client.on("ready", () => {
 })
 
 client.on("guildMemberAdd", member =>{
-    const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === "general");
+    const welcomeChannel = member.guild.channels.cache.find(channel => channel.type === 'text');
     welcomeChannel.send(`${member} hosgeldin yarram`);
 })
 
 client.on("guildMemberRemove", member =>{
-    const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === "general");
+    const welcomeChannel = member.guild.channels.cache.find(channel => channel.type === 'text');
     welcomeChannel.send(`${member} siktirdi gitti`);
 })
 

@@ -1,5 +1,5 @@
 {
-  "name": "bot_deneme",
+  "name": "bot_train",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "ascii-table": "0.0.9",
-    "discord.js": "^12.5.0",
-    "dotenv": "^8.2.0",
-    "eslint": "^7.14.0",
-    "random-puppy": "^1.1.0"
-  }
+  "license": "ISC"
 }
